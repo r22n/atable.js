@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "typescript": "^4.6.3"
+  },
+  "scripts": {
+    "make": "tsc",
+    "atable": "node dist/index.js"
+  }
+}
