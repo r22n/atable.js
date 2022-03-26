@@ -21,5 +21,11 @@ keys.forEach(({ keyword, columns }) => {
     });
 });
 
+const normalize = Math.max(...cells.map(cell => cell.length));
+cells.forEach(cell => {
+    for (let add = normalize - cell.length; add; add--) {
+        cell.push("");
+    }
+});
 
-dst.write(new CSV(cells).encode());
+dst.write(new CSV(cells, { cast: false }).encode());

@@ -137,7 +137,10 @@ function table() {
     const nokeyword = "no-keyword";
     let current: Columns = result[nokeyword] = {
         keyword: nokeyword,
-        columns: []
+        columns: [{
+            keyword: nokeyword,
+            values: []
+        }]
     };
 
     for (let tok = 0, end = src.length; tok < end; tok++) {
@@ -157,7 +160,7 @@ function table() {
             continue;
         }
 
-        let head = current.columns[current.columns.length - 1];
+        const head = current.columns[current.columns.length - 1];
         head.values.push(token);
     }
 }
