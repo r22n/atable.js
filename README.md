@@ -1,8 +1,32 @@
 # atable.js
 tabulate your free text
 
+## simple usage
+
 ```
+import atable from "atable.js";
+
+const result = atable(in, options);
+/*
+    result has vectors by keywords most appeared
+
+    "no-keyword","src","feat:","first","version","iimplementations","2","minutes"
+    "##AGO##",".gitignore","Initial","commit","3","hours",,
+    "##AGO##","LICENSE","Initial","commit","3","hours",,
+*/
+```
+
+- result type is `Tabulated` [here](src/core.ts)
+- options type is `Options` [here](src/options.ts)
+
+
+
+## command-line app
+
+```
+# if you modified ...
 $ npm run make 
+
 $ npm run atable out.csv in.txt [options(optional)]
 ```
 
