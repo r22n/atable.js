@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const options_1 = require("./options");
 function atable(src, userop) {
     init();
-    work.options = Object.assign(work.options, userop);
+    work.options = Object.assign({}, work.options, userop);
     work.src = src;
     token();
     empty();

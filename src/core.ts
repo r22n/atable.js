@@ -18,7 +18,7 @@ export interface Column {
 
 export default function atable(src: string, userop?: Options) {
     init();
-    work.options = Object.assign(work.options, userop);
+    work.options = Object.assign({}, work.options, userop);
     work.src = src;
 
     token();
