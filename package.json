@@ -1,11 +1,14 @@
 {
   "name": "atable.js",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "tabulate your free text",
   "main": "dist/core.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/r22n/atable.js"
+  },
+  "bin":{
+    "atable": "./bin/atable"
   },
   "keywords": [
     "csv",

@@ -24,10 +24,7 @@ const result = atable(in, options);
 ## command-line app
 
 ```
-# if you modified ...
-$ npm run make 
-
-$ npm run atable out.csv in.txt [options(optional)]
+$ npx atable out.csv in.txt [options(optional)]
 ```
 
 - default arguments are
